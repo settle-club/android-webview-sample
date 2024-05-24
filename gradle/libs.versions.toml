@@ -4,11 +4,13 @@ kotlin = "1.9.0"
 coreKtx = "1.13.1"
 appcompat = "1.6.1"
 activity = "1.9.0"
+playServicesLocation = "21.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
