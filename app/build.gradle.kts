@@ -18,6 +18,9 @@ android {
     }
 
     buildTypes {
+        all {
+            buildConfigField("String", "WEB_URL", "\"https://account.potlee.co.in/\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -36,6 +39,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -43,4 +49,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity)
+    implementation(libs.play.services.location)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.material)
 }
