@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         all {
-            buildConfigField("String", "WEB_URL", "\"https://account.potlee.co.in/\"")
+            buildConfigField("String", "WEB_URL", "\"https://account.settle.club/\"")
         }
         release {
             isMinifyEnabled = false
