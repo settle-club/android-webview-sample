@@ -70,7 +70,7 @@ class PermissionHandlerFragment : Fragment() {
                         createSnackBar(message = goToSettingsMsg) {
                             openApplicationSettings()
                             // Since from application we won't be getting any response close this fragment
-//                            setLocationPermissionResult(permissionGranted = false)
+                            setLocationPermissionResult(permissionGranted = false)
                         }
                     }
                 }

@@ -123,7 +123,7 @@ class JSInterfaceActivity : AppCompatActivity() {
     private fun addJSInterface() {
         webView?.addJavascriptInterface(
             object : Any() {
-                // Used to grant camera permission to the webview
+                // Used to grant location permission to the webview
                 @JavascriptInterface
                 fun getLocationPermission(params: String) {
                     if (ContextCompat.checkSelfPermission(
@@ -147,7 +147,7 @@ class JSInterfaceActivity : AppCompatActivity() {
                     }
                 }
 
-                // Used to grant location permission to the webview
+                // Used to grant camera permission to the webview
                 @JavascriptInterface
                 fun getCameraPermission(params: String) {
                     if (ContextCompat.checkSelfPermission(
